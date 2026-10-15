@@ -1,0 +1,379 @@
+.testimonial-block-content2 {
+    position: relative;
+    max-width: 648px;
+
+    .testi-slider-block-2 {
+        max-width: 648px;
+        margin-top: 65px;
+
+        @include media-breakpoint-down (xxl){
+            margin-top: 40px;
+        }
+
+         @include media-breakpoint-down (xl){
+            margin-top: 35px;
+        }
+
+        .quote-icon {
+            margin-bottom: 35px;
+
+             @include media-breakpoint-down (xl){
+               margin-bottom: 26px;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 133%;
+
+             @include media-breakpoint-down (xl){
+                font-size: 20px;
+            }
+
+             @include media-breakpoint-down (xxs){
+                font-size: 16px;
+                line-height: 135%;
+            }
+        }
+
+        .client-info {
+            border-top: 1px solid rgba(12, 47, 37, 0.1);
+            padding-top: 40px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+             @include media-breakpoint-down (xxs){
+              padding-top: 22px;
+              margin-top: 22px;
+            }
+
+            .client-img {
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+
+            .info-content {
+                .name {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .array-button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+
+        @include media-breakpoint-down (xxs){
+          position: static;
+          margin-top: 20px;
+        }
+
+        .array-prev,.array-next {
+            border: 1px solid rgba(12, 47, 37, 0.1);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 40px;
+            background: transparent;
+            color: var(--theme-color2);
+            font-size: 14px;
+            transition: all .4s ease-in-out;
+            background-color: var(--theme-color-white);
+
+            &:hover {
+                background-color: var(--theme-color1);
+                border: 1px solid var(--theme-color1);
+            }
+        }
+    }
+}
+
+.tetsimonial-image-items {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    @include media-breakpoint-down (xl){
+       justify-content: start;
+       gap: 30px;
+    }
+
+     @include media-breakpoint-down (sm){
+      display: block;
+
+      br {
+        display: block;
+      }
+    }
+
+    .thumb {
+        max-width: 398px;
+        border-radius: 30px;
+
+        @include media-breakpoint-down (sm){
+            max-width: initial;
+            height: 480px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+    }
+
+    .testi-ratting {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        margin-right: -30px;
+
+         @include media-breakpoint-down (sm){
+           writing-mode: initial;
+           transform: rotate(0deg);
+           gap: 30px;
+           margin-top: 20px;
+           margin-right: 0;
+        }
+
+        @media (max-width: 355.98px){
+            gap:10px;
+        }
+        
+        .rattings {
+            .ratting-count {
+                font-size: 60px;
+                color: var(--theme-color3);
+                line-height: 1;
+            }
+
+            .star {
+                color: var(--theme-color1);
+            }
+        }
+
+        .testi-line {
+            width: 1px;
+            height: 76px;
+            background-color: rgba(12, 47, 37, 0.1);
+             transform: rotate(90deg);
+
+              @include media-breakpoint-down (sm){
+               display: none;
+            }
+        }
+
+        p {
+            color: var(--theme-color3);
+        }
+    }
+}
+
+.testimonial-left-items-1 {
+    .sec-title {
+        margin-bottom: 105px;
+
+        @include media-breakpoint-down (xl){
+            margin-bottom: 30px;
+        }
+
+        .sec-sub-title {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.ratting-box-items {
+    background-color: var(--theme-color1);
+    border-radius: 14px;
+    text-align: center;
+    padding: 90px 50px;
+    border-radius: 14px;
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 130px;
+    position: relative;
+    margin-left: 29px;
+    margin-right: -35px;
+    @include media-breakpoint-down(xl){
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @include media-breakpoint-down (sm){
+        border-radius: 20px;
+        padding: 70px 40px;
+    }
+
+    .rating {
+        .num {
+            font-size: 60px;
+            color: var(--theme-color2);
+            line-height: 1;
+        }
+
+        .star {
+             color: var(--theme-color2);
+        }
+
+        p {
+            color: var(--theme-color3);
+            margin-top: 10px;
+        }
+    }
+
+    .client-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--theme-color1);
+        }
+    }
+}
+
+.tetsimonial-right-items {
+     .testi-slider-block {
+        max-width: 425px;
+        margin-left: auto;
+
+        @include media-breakpoint-down (xl){
+            margin-left: initial;
+        }
+
+        .quote-icon {
+            margin-bottom: 50px;
+
+             @include media-breakpoint-down (xl){
+               margin-bottom: 26px;
+            }
+        }
+
+        .star {
+            color: var(--theme-color-white);
+            margin-bottom: 15px;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 155%;
+            color: #AEC7B3;
+
+             @include media-breakpoint-down (xl){
+                font-size: 20px;
+            }
+
+             @include media-breakpoint-down (xxs){
+                font-size: 16px;
+                line-height: 135%;
+            }
+        }
+
+        .client-info {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+             @include media-breakpoint-down (xxs){
+              padding-top: 22px;
+              margin-top: 22px;
+            }
+
+            .client-img {
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+
+            .info-content {
+                .name {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: var(--theme-color-white);
+                }
+
+                span {
+                    color: #AEC7B3;
+                }
+            }
+        }
+    }
+    position: relative;
+
+    .array-button {
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+
+         @include media-breakpoint-down (lg){
+          position: static;
+          margin-top: 30px;
+        }
+
+        .array-next,.array-prev {
+            gap: 10px;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
+
+.testimonial-section {
+    margin: 0 40px;
+    border-radius: 20px;
+    padding-bottom: 170px !important;
+
+    @include media-breakpoint-down (xxxxl){
+        padding-bottom: 120px !important;
+        overflow: hidden;
+    }
+
+    @include media-breakpoint-down (xxxl){
+        margin: 0 35px;
+    }
+
+    @include media-breakpoint-down (xxl){
+        margin: 0 28px;
+    }
+
+     @include media-breakpoint-down (xl){
+        margin: 0 20px;
+        padding-bottom: 100px !important;
+    }
+
+     @include media-breakpoint-down (lg){
+        padding-bottom: 80px !important;
+    }
+
+     @include media-breakpoint-down (xxs){
+        margin: 0 16px;
+    }
+}

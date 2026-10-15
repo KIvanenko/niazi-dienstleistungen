@@ -1,0 +1,351 @@
+
+/***
+
+====================================================================
+    Marquee Section
+====================================================================
+
+***/
+
+.marquee-section {
+  padding: 25px 0;
+  background-color: var(--theme-color1);
+  &.style-three{
+    position: relative;
+    margin-top: 80px;
+    background-color: transparent;
+    .marquee{
+      position: relative;
+      padding: 20px;
+      transform: rotate(-4.57deg);
+      background-color: var(--theme-color1);
+      @include media-breakpoint-down(xl){
+				transform: rotate(0deg);
+			}
+      &.gray-bg{
+        position: absolute;
+        transform: rotate(3.57deg);
+        background-color: var(--theme-color-gray);
+        @include media-breakpoint-down(xl){
+          position: relative;
+          transform: rotate(0deg);
+          margin-bottom: 20px;
+        }
+        .text{
+          color: var(--theme-color-white);
+        }
+      }
+      &.slide-right { 
+        transform: rotate(-4.57deg) scaleX(-1);
+        .text {
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+}
+.marquee {
+  position: relative;
+  --duration: 30s;
+  --gap: 0px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  .marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: scroll var(--duration) linear infinite;
+  }
+  .text {
+    position: relative;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 100px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: var(--theme-color-white);
+    padding-left: 70px;
+    margin-left: 138px;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        color: var(--theme-color1);
+
+        .color1 {
+            color: var(--theme-color1);
+        }
+
+        &::after {
+            background-color: var(--theme-color1);
+        }
+    }
+
+    .color1 {
+        color: var(--theme-color-white);
+        transition: all .4s ease-in-out;
+    }
+
+    &:after {
+      background-color: var(--theme-color-white);
+      border-radius: 50%;
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 38px;
+      width: 38px;
+      @include transition(all 300ms ease);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+      animation-play-state: play;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  &.slide-right {
+      transform: scaleX(-1);
+      .text {
+          transform: scaleX(-1);
+      }
+  }
+}
+
+/***
+
+====================================================================
+    Marquee Section Two
+====================================================================
+
+***/
+
+.marquee-section-two {
+  position: relative;
+  padding: 80px 0 75px;
+}
+.marquee-two {
+  position: relative;
+  --duration: 30s;
+  --gap: 0px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  .marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+  }
+  .text {
+    position: relative;
+    -webkit-text-fill-color: var(--headings-color);
+    -webkit-text-stroke: 1px var(--headings-color);
+    padding-left: 70px;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 90px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    &:after {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      content: '';
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background-color: var(--theme-color-white);
+    }
+    &.color1{
+      -webkit-text-fill-color: var(--theme-color1);
+      -webkit-text-stroke: 1px var(--theme-color1);
+      &:after{
+        background-color: var(--theme-color13);
+      }      
+      &:before{
+        background-color: var(--theme-color1);
+      }      
+    }
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 70px;
+      width: 0px;
+      height: 3px;
+      content: '';
+      background-color: var(--theme-color-white);
+      @include transition(all 500ms ease);
+    }
+    &:hover {
+      &:before {
+        width: calc(100% - 70px);
+      }
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+      animation-play-state: play;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+/***
+
+====================================================================
+    Marquee Style One
+====================================================================
+
+***/
+
+.marquee-style-one {
+  position: absolute;
+  bottom: 55px;
+  .marquee-style {
+    position: relative;
+    --duration: 30s;
+    --gap: 0px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    .marquee-group {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      animation: scroll var(--duration) linear infinite;
+    }
+    .text {
+      color: var(--theme-color-white);
+      font-size: 85px;
+      font-weight: 600;
+      line-height: 95px;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 70px;
+      margin-left: 138px;
+      font-family: var(--title-font);
+      @include media-breakpoint-down(xl){
+        font-size: 60px;
+        line-height: 1.3;
+        padding-left: 10px;
+        margin-left: 110px;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 40px;
+        padding-left: 0;
+        margin-left: 90px;
+      }
+      &:after {
+        background-image: url(../images/icons/theme-flower2.png);
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        left: -80px;
+        top: 5px;
+        height: 85px;
+        width: 85px;
+        @include transition(all 300ms ease);
+        @include media-breakpoint-down(xl){
+          height: 60px;
+          width: 60px;
+          background-size: cover;
+        }
+        @include media-breakpoint-down(sm){
+          height: 40px;
+          width: 40px;
+          left: -60px;
+        }
+      }
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+      animation-play-state: play;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+
+.marquee-three {
+  position: relative;
+  --duration: 30s;
+  --gap: 0px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+
+
+  .marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+
+    &.style-home-3 {
+      .text {
+        color: var(--headings-color);
+
+        img {
+          filter: brightness(0) invert(0);
+        }
+      }
+    }
+  }
+
+  .text {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--theme-color-white);
+    font-weight: 500;
+    margin: 0 40px;
+    position: relative;
+    font-family: var(--heading-font-family);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+      animation-play-state: paused;
+    }
+  }
+}

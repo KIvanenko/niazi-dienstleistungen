@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" role="img" aria-label="Niazi">
+  <rect width="84" height="84" rx="18" fill="#ffffff"/>
+  <g transform="translate(0 6)">
+
+  <path d="M6 36 L42 8 L78 36" fill="none" stroke="#0C2F25" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 33 V62 H68 V33" fill="none" stroke="#0C2F25" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 58 C24 52 21 44 26 38 C29 44 30 51 30 58 C30 51 31 44 34 38 C39 44 36 52 30 58 Z" fill="#C7DC49"/>
+  <path d="M30 58 V42" fill="none" stroke="#0C2F25" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M55 37 L57.4 46.2 L67 48.4 L57.4 50.6 L55 59.8 L52.6 50.6 L43 48.4 L52.6 46.2 Z" fill="#4EC4EA"/>
+
+  </g>
+</svg>

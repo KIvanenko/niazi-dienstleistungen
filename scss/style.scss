@@ -1,0 +1,109 @@
+/* Landspire - Gardening and Landscaping HTML Template
+
+Template Name: Landspire
+Version: 1.0.0
+License: copyright commercial
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global Settings
+4. Main Header / TWO / Three / Four / Five
+5. Sticky Header
+6. Mobile Menu
+7. Section Title
+8. Page Title
+9. Main Slider
+10. Banner Section / Two / Three / Four
+11. Features Section / Two / Three / Four / Five / Six
+12. About Section / Two / Three / Four / Five / Six
+13. Services Section / Two / Three / Four / Five
+14. Map Section
+15. Call To Action / Two / Three / Four / Five
+16. Locations Section / Two
+17. Offer Section / Two / Three / Four
+18. FAQ's Sectiom / Two
+19. Work Section
+20. Fun Fact Section / Two
+21. Project Section / Two / Three
+22. Testimonial Section / Two / Three / Four
+23. Why Choose Us / Two / Three
+24. Industries Section
+25. Pricing Section
+26. team Section / Two
+27. Contact Sectiom / Two / Three / Four
+28. News Section / Two
+29. Clients Section
+30. Main Footer
+**********************************************/
+
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+@import "common/mixing.scss";
+@import "common/root.scss";
+@import "common/loader.scss";
+@import "common/boxed-layout.scss";
+
+@import url("animate.css");
+@import url("swiper.min.css");
+@import url("slick.css");
+@import url("jquery.fancybox.min.css");
+@import url("nice-select.css");
+@import url("jquery-ui.css");
+@import url("linear.css");
+@import url("magnific-popup.css");
+@import url("fontawesome-free.css");
+@import url("fontawesome.css");
+@import url("flaticon.css");
+@import url("flaticon-tech.css");
+@import url("flaticon-set-business.css");
+@import url("tm-bs-mp.css");
+@import url("tm-utility-classes.css");
+
+// import SCSS components one by one
+@import "accordion.scss";
+@import "reset.scss";
+@import "button.scss";
+@import "animate-icon.scss";
+@import "header.scss";
+@import "helping.scss";
+@import "mobile-menu.scss";
+@import "search-popup.scss";
+@import "section-title.scss";
+@import "banner.scss";
+@import "features.scss";
+@import "about.scss";
+@import "services.scss";
+@import "case-section.scss";
+@import "faqs.scss";
+@import "work.scss";
+@import "choose-us.scss";
+@import "funfact.scss";
+@import "marquee.scss";
+@import "testimonials.scss";
+@import "video.scss";
+@import "pricing.scss";
+@import "project.scss";
+@import "team.scss";
+@import "contact.scss";
+@import "cta.scss";
+@import "news.scss";
+@import "award.scss";
+@import "brand.scss";
+@import "shop/loader.scss";
+
+//inner
+
+@import "footer.scss";
+
+//inner
+@import "inner/page-title.scss";
+@import "inner/404.scss";
+@import "inner/service-details.scss";
+@import "inner/project-details.scss";
+@import "inner/news-details.scss";
+@import "inner/news-sidebar.scss";
+@import "inner/news-comment.scss";
+@import "inner/team-details.scss";
+@import "inner/contact-page.scss";
